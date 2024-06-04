@@ -9,6 +9,16 @@
  * @param {String} string 
  * @returns {String}
  */
-const firstNonRepeatedCharacter = function (string) {
-  // TODO: your solution here
-}
+  const firstNonRepeatedCharacter = function (string) {
+    let counter = {}
+    for (let i of string) {
+      counter[i] = counter[i] || 0;
+      counter[i]++;
+      }
+      for (let i of string) {
+        if (counter[i] === 1) {
+          return i;
+          }}
+          return '';
+  }
+
